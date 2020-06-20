@@ -18,7 +18,7 @@ type person interface { // An interface that defines what a person does
 }
 type Chinese struct { // A struct that defines a race
 	nativeLang string
-    mathScore int
+	mathScore int
 }
 int main() {
     var student person
@@ -26,7 +26,7 @@ int main() {
     student = Chinese // A Chinese called Chen implements this student   
     fmt.Printf("Chen speaks %s and his math score is %d", chen.speak(), chen.getMathScore())
 }
-// Here are codes that implements func (a *Chinese) speak() string and others
+// Skipped codes that implements func (a *Chinese) speak() string and the others
 // Spoiler alert: output is "Chen speaks trash and his math score is 59.👌😎👍"
 ```
 
