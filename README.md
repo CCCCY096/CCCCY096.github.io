@@ -27,7 +27,7 @@ int main() {
     fmt.Printf("Chen speaks %s and his math score is %d", chen.speak(), chen.getMathScore())
 }
 // Here are codes that implements func (a *Chinese) speak() string and others
-// Spoiler alter: output is "Chen speaks trash and his math score is 59.👌😎👍"
+// Spoiler alert: output is "Chen speaks trash and his math score is 59.👌😎👍"
 ```
 
 An *empty interface* may hold values of any type. Therefore it can hold values of any type!
