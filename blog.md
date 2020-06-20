@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+# Future blogs are born here! (maybe)
 
-You can use the [editor on GitHub](https://github.com/CCCCY096/CCCCY096.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+*Disclaimer: these notes tend to have errors as I am still a noob at coding.*
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## <u>About Golang</u>
 
-### Markdown
+### Interface
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+An *interface type* is defined as a set of method signatures.
 
-```markdown
-Syntax highlighted code block
+Under the hood, interface values can be thought of as **a tuple of a value and a concrete type**.  
+After line 14, the interface value `student` can be seen as `(chen, Chinese)` :
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```go
+type person interface { // An interface that defines what a person does
+	speak() string
+	getMathScore int
+}
+type Chinese struct { // A struct that defines a race
+	nativeLang string
+	mathScore int
+}
+int main() {
+    var student person
+    chen Chinese
+    student = Chinese // A Chinese called Chen implements this student   
+    fmt.Printf("Chen speaks %s and his math score is %d", chen.speak(), chen.getMathScore())
+}
+// Skipped codes that implements func (a *Chinese) speak() string and the others
+// Spoiler alert: output is "Chen speaks trash and his math score is 59.👌😎👍"
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+An *empty interface* may hold values of any type. Therefore it can hold values of any type!
 
-### Jekyll Themes
+```go
+func Println(a ...interface{}) (n int, err error) // This thing holds any number and type of values. Damn!
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CCCCY096/CCCCY096.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Closure
 
-### Support or Contact
+`func` is also a first class citizen in Golang, and therefore `closure` is supported.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Template
+
+Golang doesn't support template officially. There are some third-party package, however, can create the illusion of template. 
+
+### Coroutine
+
+*Coroutine* is like `thread` in user mode. Kernel doesn't know the existence of coroutines; It is the runtime (like in Golang) or generator (like in python) or something else that schedules them.
+
+`Goroutine` is scheduled by Golang runtime using resizable, bounded stacks . It switch a `Goroutine` when it blocks (during a blocking sys call for example). 
+
+`Goroutine` is cheap. A few KB each in size typically. CPU overheads are also small.
