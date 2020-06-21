@@ -1,6 +1,6 @@
 # Blog of CCCCY!
 
-* Here are my ~~error-embedded~~ notes about Golang: [notes on Golang](https://CCCCY096.github.io/about_golang "notes on Golang")
+* Here are my ~~error embedded~~ notes about Golang: [notes on Golang](https://CCCCY096.github.io/about_golang "notes on Golang")
 * 猛男施工中
 
 
