@@ -1,7 +1,3 @@
-# Future blogs are born here! (maybe)
-
-*Disclaimer: these notes tend to have errors as I am still a noob at coding.*
-
 ## <u>About Golang</u>
 
 ### Interface
@@ -30,7 +26,7 @@ int main() {
 // Spoiler alert: output is "Chen speaks trash and his math score is 59.👌😎👍"
 ```
 
-An *empty interface* may hold values of any type. Therefore it can hold values of any type!
+An *empty interface* may hold values of any type!
 
 ```go
 func Println(a ...interface{}) (n int, err error) // This thing holds any number and type of values. Damn!
