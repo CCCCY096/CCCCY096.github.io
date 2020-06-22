@@ -25,7 +25,7 @@ int main() {
     fmt.Printf("Chen speaks %s and his math score is %d", chen.speak(), chen.getMathScore())
 }
 // Skipped codes that implements func (a *Chinese) speak() string and the others
-// Spoiler alert: output is "Chen speaks trash and his math score is 59.👌😎👍"
+// Spoiler alert: output is "Chen speaks trash and his math score is 59."👌😎👍
 ```
 
 An *empty interface* may hold values of any type!
@@ -41,6 +41,18 @@ func Println(a ...interface{}) (n int, err error) // This thing holds any number
 ### Template
 
 Golang doesn't support template officially. There are some third-party package, however, can create the illusion of template. 
+
+**Just in! Golang's update on generics**: https://blog.golang.org/generics-next-step.
+
+> ... the earliest that generics could be added to Go would be the Go 1.17 release, scheduled for August 2021.
+
+And this is yet a optimistic prediction!
+
+Below are some quick overview of the generic feature:
+
+* Function with type parameter list: `func F(type T1, type T2) (p T) { ... }`
+* Each type parameter can have an optional type constraint: `func F(type T Constraint)(p T) { ... }`
+* Types can also have a type parameter list: `type M(type T) []T`
 
 ### Coroutine
 
