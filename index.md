@@ -1,14 +1,14 @@
-# Blog of CCCCY!
+# My Blogs!
 
 * My ~~error embedded~~ notes about Golang: [notes on Golang](https://CCCCY096.github.io/about_golang)
-* My fav apps & tools! --> [world's finest list of apps & tools](https://CCCCY096.github.io/fav_software)
-* You really should check it out 👆 It's keeps growing!
+* My favorite apps & tools! --> [world's finest list of apps & tools](https://CCCCY096.github.io/fav_software)
+* You really should check it out 👆 It keeps growing!
 
 
 
 
 
-## About me
+### About me
 
 Senior CS student @University of Michigan, Ann Arbor. Currently interning @Tencent, Shenzhen.
 
