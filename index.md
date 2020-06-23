@@ -1,7 +1,7 @@
 # My Blogs!
 
 * My ~~error embedded~~ notes about Golang: [notes on Golang](https://CCCCY096.github.io/about_golang)
-* My favorite apps & tools! --> [world's finest list of apps & tools](https://CCCCY096.github.io/fav_software)
+* My favorite apps & tools! --> [list of world's finest apps & tools](https://CCCCY096.github.io/fav_software)
 * You really should check it out 👆 It keeps growing!
 
 
