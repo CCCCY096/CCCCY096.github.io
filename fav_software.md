@@ -1,4 +1,4 @@
-## World's Finest List of Apps & Tools
+## List of World's Finest Apps & Tools
 
 ### Typora - Markdown Editor
 

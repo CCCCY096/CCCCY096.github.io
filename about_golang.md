@@ -4,7 +4,7 @@
 
 ### Interface
 
-An *interface type* is defined as a set of method signatures.
+An *interface type* is defined as a set of method signatures.	
 
 Under the hood, interface values can be thought of as **a tuple of a value and a concrete type**.  
 After line 14, the interface value `student` can be seen as `(chen, Chinese)` :
@@ -61,3 +61,5 @@ Below are some quick overview of the generic feature:
 `Goroutine` is scheduled by Golang runtime using resizable, bounded stacks . It switch a `Goroutine` when it blocks (during a blocking sys call for example). 
 
 `Goroutine` is cheap. A few KB each in size typically. CPU overheads are also small.
+
+`Goroutine`'s context switching is fast. It involves only a few registers, whereas `thread`'s context switching involves more reigisters and some mode changing (user mode / kernel mode).
