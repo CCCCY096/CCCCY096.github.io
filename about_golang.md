@@ -12,7 +12,7 @@ After line 14, the interface value `student` can be seen as `(chen, Chinese)` :
 ```go
 type person interface { // An interface that defines what a person does
 	speak() string
-	getMathScore int
+    getMathScore() int
 }
 type Chinese struct { // A struct that defines a race
 	nativeLang string
