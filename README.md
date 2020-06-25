@@ -1,2 +1,2 @@
-# Chengyu Chen's Blogs
+# Chengyu Chen's Blog
 My first blog! 猛男施工中...
