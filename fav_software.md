@@ -6,15 +6,13 @@
 
 Link: [Typora official website](https://typora.io/)
 
-
-
 ### VS Code
 
 Well this one is way too famous for me to introduce.
 
 What I like about it though: ***remote WSL/SSH + multiple language support + active community***
 
-
+Update: ***vim*** key binding!
 
 ### PowerToys Run - Launcher & File Searcher
 

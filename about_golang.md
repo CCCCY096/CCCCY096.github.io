@@ -42,7 +42,7 @@ func Println(a ...interface{}) (n int, err error) // This thing holds any number
 
 Golang doesn't support template officially. There are some third-party package, however, can create the illusion of template. 
 
-**Just in! Golang's update on generics**: https://blog.golang.org/generics-next-step.
+**Just in! Golang's update on generics**: [https://blog.golang.org/generics-next-step](https://blog.golang.org/generics-next-step)
 
 > ... the earliest that generics could be added to Go would be the Go 1.17 release, scheduled for August 2021.
 
@@ -63,3 +63,5 @@ Below are some quick overview of the generic feature:
 `Goroutine` is cheap. A few KB each in size typically. CPU overheads are also small.
 
 `Goroutine`'s context switching is fast. It involves only a few registers, whereas `thread`'s context switching involves more reigisters and some mode changing (user mode / kernel mode).
+
+`Goroutine` avoid blocking as much as possible. 
