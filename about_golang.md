@@ -2,6 +2,8 @@
 
 *没想到我现在连编程语言都能云*🤔
 
+[toc]
+
 ### Interface
 
 An *interface type* is defined as a set of method signatures.	
