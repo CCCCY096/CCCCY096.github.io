@@ -4,11 +4,11 @@
 
 **Step 1**: Run `vimtutor` and step through the tutorial. Take less than half an hour during the first try. Repeat a few times if you will.
 
-**Step 2**: Practice the basic motions and commands taught in the tutorial. **VS Code + Vim key-binding** plugin is a good playground because you can always work around by using the normie editing when you forget Vim syntax.
+**Step 2**: Practice the basic motions and commands taught in the tutorial. **VS Code + Vim key-binding plugin** is a good playground because you can always work around by using the normie editing when you forget Vim syntax.
 
 **Step 3**: Learn more advanced usages, like registers, options ( `hlsearch, ic, ...` ), more complex motions and commands and so on.
 
-**Step 4**: Maybe it's time to use `vim` or `Neovim` with plugins as a productivity tool. I'm still stuck in this stage so I don't know what to tell you. I heard it's damn messy to use those plugins.
+**Step 4**: Maybe it's time to use `vim` or `Neovim` with plugins as a productivity tool. I'm still stuck in this stage so I don't know what to tell you. I heard it's damn messy to use those plugins. VS Code might be good enough!
 
 **Step 5**: Profits.
 
