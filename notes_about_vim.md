@@ -48,4 +48,26 @@
 |            q | stop recording                                               |             |
 |     🔢 @{a-z} | execute the contents of register {a-z} (N times)             |             |
 |         🔢 @@ | repeat previous @{a-z} (N times)                             |             |
+|         🔢 @@ | repeat previous @{a-z} (N times)                             |             |
 
+## Buffer, window and tab
+There is a load of blogs about the detailed differences among these things. Basically: buffer is roughly an *instance* of a file, window is a *viewpoint* of a buffer, tab is a collection of window(s).
+
+#### commands about buffer
+
+* `:ls` shows a list of current buffers.
+* `:bprev` and `:bnext` to switch between buffers.
+* `:bdelete` to delete a buffer. Rarely used.
+
+#### commands about window
+
+* `:new` or `:sp` (short for `:vsplit`) to *vertically* open a window of buffer of a file (current buffer if no arguments provided).
+* `:vsp` (short for `:vsplit`) to *horizontally* open a ...
+* `<c-W>{jkhl}` switch to window in the given direction.
+
+#### commands about tab
+
+* `:tabnew` or `:tabe` (short for `:tabedit`) opens a new tab with specified file.
+* `gt` and `gT` to switch between tabs.
+
+Aaaaand this covers my braindead usages. Cheers!
